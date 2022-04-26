@@ -1,0 +1,433 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #1F1E1E;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header{
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.header__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px 0 49px;
+}
+.header__phone{
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.header__phone-number{
+    font-weight: 400;
+    margin-left: 19px;
+    padding: 12px 31px 13px;
+    background-color: #886239;
+    border-radius: 22px;
+}
+
+.menu{
+    width: 100%;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    margin-top: 15px;
+    padding: 26px 0 22px;
+}
+.menu__list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.header__title{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: auto;
+}
+.header__descr{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    max-width: 422px;
+    color: #1F1E1E;
+}
+.header__btn{
+    display: inline-block;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 18px 54px 20px;
+    background-color: #886239;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.header__arrow{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.direction{
+    padding: 100px 0;
+}
+.direction__inner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+}
+.direction__img{
+    display: block;
+}
+
+.direction__text{
+    padding: 10px 19px 19px;
+    font-size: 16px;
+    border: 1px solid #D9D9DE;
+    border-top: none;
+}
+.travel-info{
+    background-image: url(../images/travel-info-bb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 32px 0 51px;
+}
+.travel-info__title{
+    color: #FFFFFF;
+    margin-bottom: 52px;
+} 
+.title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 130%;
+
+}
+.travel-info__items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 56px 67px;
+}
+.travel-info__img{
+    margin-bottom: 15px;
+}
+.travel-info__text{
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.titlepo{
+    text-align: center;
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 36px;
+}
+.popular{
+    padding: 100px 0;
+}
+.popular_title{
+    margin-bottom: 40px;
+}
+.popular__items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 32px;
+    padding-bottom: 82px;
+    border-bottom: 2px solid #D9D9DE;
+}
+.popular__link{
+    padding: 16px 24px 19px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 256px;
+    line-height: 130%;
+}
+.popular__link:nth-child(3),
+.popular__link:nth-child(6){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.popular__tittl{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.popular__pricw{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: auto;
+}
+.popular__country,
+.popular__time{
+    margin-bottom: 15px;
+}
+.popujjjjj{
+    font-size: 24px;
+}
+.map{
+    padding-bottom: 100px;
+}
+.map__title{
+    margin-bottom: 46px;
+}
+.about{
+    padding-bottom: 100px;
+}
+.about__inner{
+    display: grid;
+    grid-template-columns: 448px 640px;
+    grid-gap: 32px;
+
+}
+.about__title{
+    text-align: left;
+    margin-bottom: 25px;
+}
+.about__text{
+    margin-bottom: 34px;
+}
+.about__link{
+    font-size: 16px;
+    color: #C4C4C4;
+    line-height: 19px;
+    text-decoration: underline;
+}
+.about__poput{
+    background-image: url(../images/video-dg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery{
+    margin: 50px 0 105px;
+    background: #886239;
+    color: #FFFFFF;
+}
+.gallery__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-right: 160px;
+}
+.gallery__link{
+    font-size: 16px;
+    line-height: 19;
+    text-decoration: underline;
+}
+.gallery__item-inner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 32px;
+}
+.slick__btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: -85px;
+    right: 0;
+}
+.slick-prev{
+    right: 60px;
+}
+.gallery__slider{
+    padding-bottom: 100px;
+}
+.tour{
+    padding: 100px 0;
+}
+.tour__title{
+    margin-bottom: 77px;
+}
+.tour__box{
+    column-count: 2;
+    column-gap: 47px;
+    border-bottom: 1px solid #D9D9DE;
+    margin-bottom: 44px;
+    padding-bottom: 65px;
+}
+.tour__text span{
+    font-weight: 700;
+}
+.tour__info{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 70px;
+}
+.tour__info-item{
+    font-size: 58px;
+    line-height: 130%;
+    color: #886239;
+    font-weight: bold;
+    font-family: 'PT Serif',serif;
+    text-align: center;
+}
+.tour__info-text{
+    font-weight: 500;
+    line-height: 130%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #1F1E1E;
+}
+
+
+.booking{
+    background: #EAEAEA;
+    padding: 75px 0 76px;
+}
+.booking__title{
+    margin-bottom: 43px;
+}
+.booking__form{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   max-width: 830px;
+   margin: 0 auto;
+}
+.booking__input{
+    width: 256px;
+    height: 44px;
+    border: 1px solid #D9D9DE;
+    padding: 11px 14px 12px;
+    margin-bottom: 28px;
+}
+.booking__input::placeholder{
+    font-family: 'Roboto', serif;
+    color: #C4C4C4;
+    font-size: 16px;
+}
+.booking__area{
+    font-family: 'Roboto', serif;
+    color: #C4C4C4;
+    font-size: 16px;
+}
+
+
+.booking__area{
+    width: 100%;
+    height: 112px;
+    padding: 14px;
+    border: 1px solid #D9D9DE;
+    resize: none;
+    margin-bottom: 67px;
+}
+.boking__btn{
+    background: #886239;
+    border-radius: 30px;
+    padding: 19px 65px 20px;
+    line-height: 21%;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.footer{
+    background: #1F1E1E;
+    padding: 80px 0;
+}
+.footer__logo{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.footer__box{
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 130%;
+    max-width: 830px;
+    margin: 0 auto;
+}
+
+    .footer__info{
+        width: 225px;
+       
+    }
+    .footer__box-title {
+        font-weight: 500;
+        margin-bottom: 7px;
+    }
+    .footer__copy {
+        margin-bottom: 7px;
+        opacity: 0,8;
+    }
+    .footer__link {
+        text-decoration: underline;
+        opacity: 0,8;
+    }
+    .footer__address {
+        width: 165px;
+    }
+    .footer__address-text {
+        opacity: 0,8;
+        font-size: 14px;
+    }
+    .footer__contacts {
+        width: 210px;
+    }
+    .footer__phone {
+        opacity: 0,8;
+        display: block;
+    }
+    .footer__mail {
+        opacity: 0,8;
+        display: block;
+    }
+    .menu__btn{
+        display: none;
+    }
+
+    @media (max-width:800px){
+        .header__phone span{
+            display: none;
+        }
+    }
+    
+    @media (max-width:560px){
+        .header__title{
+            font-size: 50px;
+        }
+        .menu__btn{
+            display: inline-block;
+        }
+    }
